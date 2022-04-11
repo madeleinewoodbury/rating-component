@@ -1,6 +1,16 @@
+import { useState } from "react";
 import starIcon from "../images/icon-star.svg";
 
 const Rating = () => {
+  const [rating, setRating] = useState(0);
+  const ratings = [1, 2, 3, 4, 5];
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (rating != 0) {
+      alert(rating);
+    }
+  };
   return (
     <div className='rating'>
       <div className='circle'>
@@ -13,23 +23,17 @@ const Rating = () => {
           is appreciated to help us improve our offering!
         </p>
       </div>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className='form-container'>
-          <div className='input circle'>
-            <span>1</span>
-          </div>
-          <div className='input circle'>
-            <span>2</span>
-          </div>
-          <div className='input circle'>
-            <span>3</span>
-          </div>
-          <div className='input circle'>
-            <span>4</span>
-          </div>
-          <div className='input circle'>
-            <span>5</span>
-          </div>
+          {ratings.map((r) => (
+            <div
+              key={r}
+              className={rating == r ? "input circle active" : "input circle"}
+              onClick={(e) => setRating(r)}
+            >
+              <span>{r}</span>
+            </div>
+          ))}
         </div>
         <button className='btn'>SUBMIT</button>
       </form>

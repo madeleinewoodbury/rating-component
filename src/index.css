@@ -74,6 +74,17 @@ p {
 .input {
   color: var(--light);
   font-weight: bold;
+  cursor: pointer;
+}
+
+.input:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.input.active {
+  background-color: var(--light);
+  color: white;
 }
 
 .input span {
@@ -85,6 +96,7 @@ p {
   outline: none;
   background-color: var(--primary);
   color: white;
+  font-weight: bold;
   letter-spacing: 1px;
   padding: 12px;
   border: none;
@@ -92,6 +104,11 @@ p {
   cursor: pointer;
   width: 100%;
   margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: white;
+  color: var(--primary);
 }
 
 /* 
