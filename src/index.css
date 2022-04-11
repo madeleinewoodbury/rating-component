@@ -31,14 +31,14 @@ body {
 }
 
 .layout {
-  width: 380px;
+  width: 420px;
   background-color: rgba(37, 45, 55, 0.6);
   border-radius: 20px;
 }
 
 .rating,
 .feedback {
-  padding: 30px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
 }
@@ -141,7 +141,18 @@ p {
   color: var(--primary);
 }
 
-/* 
-Mobile: 375px
-Desktop: 1440px
-*/
+@media screen and (max-width: 500px) {
+  .layout {
+    width: 320px;
+  }
+
+  .rating,
+  .feedback {
+    padding: 30px;
+  }
+
+  .circle {
+    width: 40px;
+    height: 40px;
+  }
+}
