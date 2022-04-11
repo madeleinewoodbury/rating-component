@@ -36,10 +36,40 @@ body {
   border-radius: 20px;
 }
 
-.rating {
+.rating,
+.feedback {
   padding: 30px;
   display: flex;
   flex-direction: column;
+}
+
+.feedback {
+  text-align: center;
+}
+
+.img-container {
+  margin-bottom: 20px;
+}
+
+.rated {
+  background-color: var(--dark);
+  border-radius: 25px;
+  width: 200px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+
+.rated p {
+  color: var(--primary);
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .circle {

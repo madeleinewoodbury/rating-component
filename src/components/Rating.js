@@ -1,16 +1,8 @@
-import { useState } from "react";
 import starIcon from "../images/icon-star.svg";
 
-const Rating = () => {
-  const [rating, setRating] = useState(0);
+const Rating = ({ setRating, handleSubmit, rating }) => {
   const ratings = [1, 2, 3, 4, 5];
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (rating != 0) {
-      alert(rating);
-    }
-  };
   return (
     <div className='rating'>
       <div className='circle'>

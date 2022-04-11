@@ -1,10 +1,10 @@
-import Rating from "./components/Rating";
+import Card from "./components/Card";
 
 const App = () => {
   return (
     <main className='container'>
       <div className='layout'>
-        <Rating />
+        <Card />
       </div>
     </main>
   );
