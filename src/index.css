@@ -4,8 +4,8 @@
   --primary: #fb7718;
   --light: #959eac;
   --medium: #7c8798;
-  --dark: #252d37;
-  --very-dark: #121417;
+  --dark: rgb(37, 45, 55);
+  --very-dark: rgb(18, 20, 23);
 }
 
 * {
@@ -15,9 +15,42 @@
 
 html,
 body {
+  background-color: var(--very-dark);
   font-family: "Overpass", sans-serif;
   font-size: 15px;
   font-weight: 400;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout {
+  width: 25%;
+  height: 400px;
+  background-color: var(--dark);
+  border-radius: 20px;
+  box-shadow: 0px 2px 11px -5px rgba(0, 0, 0, 0.75);
+}
+
+.rating {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.star {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(18, 20, 23, 0.3);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* 

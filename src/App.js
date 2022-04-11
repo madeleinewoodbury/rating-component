@@ -1,5 +1,13 @@
+import Rating from "./components/Rating";
+
 const App = () => {
-  return <h1>Rating Component</h1>;
+  return (
+    <main className='container'>
+      <div className='layout'>
+        <Rating />
+      </div>
+    </main>
+  );
 };
 
 export default App;
