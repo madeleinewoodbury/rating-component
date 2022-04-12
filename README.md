@@ -7,3 +7,5 @@ Coding Challenge from [Frontend Mentor](https://www.frontendmentor.io)
 ## The challenge
 
 Build out the interactive rating component and get it looking as close to the design as possible.
+
+### View My Solution [here](https://rating-component-eight.vercel.app/)
